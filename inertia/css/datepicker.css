@@ -1,0 +1,3 @@
+.dp__input {
+  @apply dark:bg-dark-slate! dark:text-white! dark:border-dark-gray! dark:placeholder:text-gray-400!;
+}

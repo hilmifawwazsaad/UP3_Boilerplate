@@ -1,0 +1,23 @@
+.multiselect__tags {
+  @apply bg-dark-secondary! cursor-pointer text-white! border! border-dark-slate!;
+}
+
+.multiselect__tags .invalid {
+  @apply border-red-500!;
+}
+
+.multiselect__content-wrapper {
+  @apply bg-dark-secondary!  text-white!;
+}
+
+.multiselect__input {
+  @apply bg-dark-secondary!  text-white! focus:ring-0 placeholder:text-slate-400;
+}
+
+.multiselect__single {
+  @apply bg-dark-secondary!  text-white! focus:ring-0 line-clamp-1!;
+}
+
+.multiselect__select {
+  @apply h-full!;
+}

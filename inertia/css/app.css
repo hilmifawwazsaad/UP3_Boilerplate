@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&display=swap');
+
+@import 'flowbite/src/themes/default';
+@import 'tailwindcss';
+@import '@bhplugin/vue3-datatable/dist/style.css';
+@import 'preline/variants.css';
+@source "../../node_modules/preline/dist/*.js";
+
+@import './datatable.css';
+@import './multiselect.css';
+@import './modal.css';
+@import './datepicker.css';
+
+@plugin 'taos/plugin';
+@plugin "flowbite/plugin";
+@plugin "tailwindcss-animated";
+@plugin "tailwind-scrollbar";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fonts */
+  --font-boldonse: 'Boldonse', 'sans-serif';
+  --font-winky: 'Winky', 'sans-serif';
+  --font-nunito: 'Nunito', 'sans-serif';
+  --font-oxygen: 'Oxygen', 'sans-serif';
+  --font-exo: 'Exo', 'sans-serif';
+
+  /* Colors */
+  --color-gold: #806d00;
+  --color-primary: #127ec2;
+  --color-secondary: #0c649c;
+  --color-yellow: #ffdc7f;
+  --color-dimmed-white: #f4f4f4;
+  --color-dimmed-yellow: #fba834;
+
+  --color-dark-primary: #191919;
+  --color-dark-secondary: #222222;
+  --color-dark-slate: #2f2f2f;
+  --color-dark-gray: #585858;
+  --color-dark-blue: #03152b;
+  --color-dark-field: #343534;
+
+  --font-lato: 'Lato', sans-serif;
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --font-oxygen: 'Oxygen', sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important ;
+}
+
+.custom-x-scrollbar::-webkit-scrollbar {
+  height: 6px !important;
+  width: 4px;
+  background: rgb(180, 180, 180);
+}
+
+.dark .custom-x-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: rgb(73, 68, 68);
+}
+
+.custom-x-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(66, 66, 66);
+  border-radius: 10px;
+}
+
+.dark .custom-x-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(194, 194, 194);
+  border-radius: 10px;
+}

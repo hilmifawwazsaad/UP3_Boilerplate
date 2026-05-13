@@ -1,0 +1,97 @@
+.bh-table-responsive {
+  @apply overflow-y-hidden overflow-x-auto scrollbar-thin text-base;
+}
+
+.bh-table-responsive > table > thead > tr > th {
+  scrollbar-color: #6b6b6b #ffffff;
+  @apply bg-primary text-white;
+}
+
+.bh-table-responsive > table > tbody > tr > td {
+  scrollbar-color: #6b6b6b #ffffff;
+  @apply bg-white text-black border! border-gray-200!;
+}
+
+.bh-table-responsive > table > thead > tr > th > .bh-filter {
+  margin-top: 6px;
+}
+
+.bh-table-responsive > table > thead > tr > th > .bh-filter > .bh-form-control {
+  @apply bg-slate-100;
+}
+
+.bh-table-responsive > table > thead > tr > th > .bh-filter > button {
+  @apply bg-slate-100;
+}
+
+.bh-table-responsive > table > thead > tr > th > .bh-filter > .bh-filter-menu {
+  @apply bg-black! text-black!;
+}
+
+.bh-pagination {
+  background-color: #ffffff;
+  color: #393941;
+}
+
+.bh-page-item.bh-active {
+  @apply bg-primary! text-white!;
+}
+
+.dark .bh-table-responsive > table > thead > tr > th > .bh-filter > .bh-form-control {
+  @apply bg-dark-gray! text-white! border-dark-gray;
+}
+
+.dark .bh-table-responsive > table > thead > tr > th > .bh-filter > button {
+  @apply bg-dark-gray! text-white! border-dark-gray;
+}
+
+.dark .bh-table-responsive > table > thead > tr > th > .bh-filter > .bh-filter-menu {
+  @apply bg-dark-primary! text-dark-primary!;
+}
+
+.dark .bh-table-responsive > table > thead > tr > th {
+  scrollbar-color: #6b6b6b #2d2d2d;
+  @apply bg-dark-primary text-white!;
+}
+
+.dark .bh-table-responsive > table > tbody > tr > td {
+  scrollbar-color: #6b6b6b #2d2d2d;
+  @apply bg-dark-field text-white! border-dark-gray!;
+}
+
+.dark .bh-pagination {
+  @apply bg-transparent! text-white!;
+}
+
+.dark .bh-page-item.bh-active {
+  @apply bg-primary! text-white! dark:border-dark-gray;
+}
+
+.dark .bh-table-responsive table.bh-table-bordered thead tr th {
+  @apply border-dark-gray;
+}
+
+.dark .bh-table-responsive table.bh-table-bordered tbody tr td {
+  @apply border-dark-gray;
+}
+
+.bh-text-primary {
+  @apply text-primary! dark:text-dark-primary!;
+}
+
+.bh-text-black\/20 {
+  @apply text-slate-300! dark:text-slate-400!;
+}
+
+.dark .bh-pagination-number > .bh-active {
+  @apply bg-primary! text-white! dark:bg-dark-primary! dark:text-white!;
+}
+
+.bh-pagesize {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.dark .bh-pagesize {
+  @apply bg-dark-field text-white! border-dark-gray dark:border-dark-gray;
+}
